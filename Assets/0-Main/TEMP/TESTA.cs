@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TESTB : MonoBehaviour
+public class TESTA : MonoBehaviour
 {
       private int Y;
 
