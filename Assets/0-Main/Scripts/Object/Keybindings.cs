@@ -5,7 +5,7 @@ namespace TDS.Object
       using static KeyCode;
 
       [CreateAssetMenu]
-      public class InputKeys : ScriptableObject
+      public class Keybindings : ScriptableObject
       {
             public KeyCode Switch = F;
 

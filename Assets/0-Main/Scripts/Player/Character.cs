@@ -11,7 +11,7 @@ namespace TDS.Player
             [Tooltip("When the character is marked to be in control.")]
             public UnityEvent<bool> OnFocused;
 
-            public InputKeys keys;
+            public Keybindings keys;
 
 
             private void OnEnable() => OnFocused.Invoke(true);

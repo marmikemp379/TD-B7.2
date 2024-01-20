@@ -7,19 +7,19 @@ namespace TDS.Player
 
       public class Composite : MonoBehaviour
       {
-            [SerializeField] private InputKeys keys;
+            [SerializeField] private Keybindings keys;
             [SerializeField] private Character[] characters;
 
-            private int _id; public int ID
+            private int id; public int ID
             {
-                  get => _id;
+                  get => id;
                   set
                   {
-                        characters[_id].enabled = false;
+                        characters[id].enabled = false;
 
-                        _id = Mathf.Clamp(value, min: 0, max: characters.Length);
+                        id = Mathf.Clamp(value, min: 0, max: characters.Length);
 
-                        characters[_id].enabled = true;
+                        characters[id].enabled = true;
                   }
             }
 

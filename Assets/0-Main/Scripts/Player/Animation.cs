@@ -8,7 +8,7 @@ namespace TDS.Player
 
       public class Animation : MonoBehaviour
       {
-            private InputKeys keys;
+            private Keybindings keys;
             private Movement movement;
 
             private Animator animator;
