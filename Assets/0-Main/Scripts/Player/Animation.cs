@@ -11,6 +11,8 @@ namespace TDS.Player
             private Keybindings keys;
             private Movement movement;
 
+            private GUN gun;
+
             private Animator animator;
 
             private readonly int switchHash = Animator.StringToHash("Switch");
@@ -47,6 +49,7 @@ namespace TDS.Player
                   }
                   animator = GetComponent<Animator>();
                   movement = GetComponent<Movement>();
+                  gun = GetComponent<GUN>();
             }
             private void Update()
             {
@@ -61,7 +64,16 @@ namespace TDS.Player
 
                   if (Input.GetKeyDown(keys.Fire))
                   {
-                        animator.SetTrigger(attackHash);
+                        bool hasAmmo = true;
+                        switch (WeaponID)
+                        {
+                              case 2: hasAmmo = gun.PistolAmmo > 0; break;
+                              case 3: hasAmmo = gun.RifleAmmo > 0; break;
+                        }
+                        print(gun.PistolAmmo);
+
+                        if (hasAmmo)
+                              animator.SetTrigger(attackHash);
                   }
                   if (Input.GetKeyUp(keys.Fire))
                   {

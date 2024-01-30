@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Default Mappings
   m_EditorClassIdentifier: 
   Switch: 102
-  Forward: 119
+  Forward: 100
   Backward: 115
   Left: 97
   Right: 100
   Fire: 323
+  Bat: 49
+  Knife: 50
+  Pistol: 51
+  Rifle: 52
+  Flamethrower: 53

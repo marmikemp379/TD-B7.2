@@ -44,12 +44,12 @@ namespace TDS.Player
             {
                   #region I N P U T   H A N D L I N G
                   if (Input.GetKeyDown(keys.Forward)) direction.y += 1F;
-                  if (Input.GetKeyDown(keys.Backward)) direction.y -= 1F;
+                  if (Input.GetKeyDown(keys.Back)) direction.y -= 1F;
                   if (Input.GetKeyDown(keys.Left)) direction.x -= 1F;
                   if (Input.GetKeyDown(keys.Right)) direction.x += 1F;
 
                   if (Input.GetKeyUp(keys.Forward)) direction.y -= 1F;
-                  if (Input.GetKeyUp(keys.Backward)) direction.y += 1F;
+                  if (Input.GetKeyUp(keys.Back)) direction.y += 1F;
                   if (Input.GetKeyUp(keys.Left)) direction.x += 1F;
                   if (Input.GetKeyUp(keys.Right)) direction.x -= 1F;
                   #endregion
