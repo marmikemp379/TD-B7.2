@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335e27864b22aae498239ecc63166df6, type: 3}
   m_Name: Default Settings
   m_EditorClassIdentifier: 
-  MaxFPS: 400
+  MaxFPS: 154
