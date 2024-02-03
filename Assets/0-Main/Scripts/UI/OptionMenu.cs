@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+using TDS.Object;
+
 namespace TDS.UI
 {
       public class OptionMenu : MonoBehaviour
       {
+            [SerializeField] private Settings settings;
             [SerializeField] private Canvas canvas;
 
             public UnityEvent OnInitialize;

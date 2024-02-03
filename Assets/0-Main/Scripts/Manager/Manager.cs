@@ -8,12 +8,8 @@ namespace TDS
       [DefaultExecutionOrder(5)]
       public class Manager : MonoBehaviour
       {
-            private static Manager instance;
-
             [SerializeField] private Settings settings;
             [SerializeField] private CursorLockMode cursorLockMode;
-
-            public static Settings Settings => instance.settings;
 
 
             [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
@@ -22,10 +18,6 @@ namespace TDS
                   Load();
             }
 
-            private void Awake()
-            {
-                  instance = this;
-            }
             private void Start()
             {
                   Cursor.lockState = cursorLockMode;

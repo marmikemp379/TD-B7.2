@@ -6,5 +6,6 @@ namespace TDS.Object
       public class Settings : ScriptableObject
       {
             public ushort MaxFPS;
+            public Vector2[] Resolutions;
       }
 }
