@@ -10,7 +10,7 @@ namespace TDS.Player
       [RequireComponent(typeof(Character))]
       public class Movement : MonoBehaviour
       {
-            private Keybindings keys;
+            private Keybinds keys;
 
             public float Pace;
             [SerializeField, Readonly] private Vector2 direction;

@@ -5,7 +5,10 @@ namespace TDS.Object
       [CreateAssetMenu]
       public class Settings : ScriptableObject
       {
-            public ushort MaxFPS;
-            public Vector2[] Resolutions;
+            [Header("V I D E O")]
+            public ushort TargetFPS;
+
+            [Header("I N P U T")]
+            public Keybinds Key;
       }
 }

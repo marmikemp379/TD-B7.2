@@ -7,7 +7,7 @@ namespace TDS.Player
 
       public class Composite : MonoBehaviour
       {
-            [SerializeField] private Keybindings keys;
+            [SerializeField] private Keybinds keys;
             [SerializeField] private Character[] characters;
 
             private int id; public int ID
